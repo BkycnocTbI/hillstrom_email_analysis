@@ -1,0 +1,27 @@
+{
+  "selection_stage": "validation",
+  "criterion": "maximum mean IPW policy revenue",
+  "selected_policy": "High-history Mens",
+  "feature": "pretreatment history",
+  "action": "Mens E-Mail",
+  "capacity_fraction": 0.15625,
+  "tie_break": "first occurrence in input row order",
+  "candidate_set": [
+    "No email",
+    "Random Mens E-Mail",
+    "Random Womens E-Mail",
+    "High-history Mens",
+    "Ridge T-learner",
+    "HGB T-learner"
+  ],
+  "test_comparisons": [
+    "High-history vs No email",
+    "High-history vs Random Mens"
+  ],
+  "test_interval_level_per_comparison": 0.975,
+  "approximate_joint_test_interval_level": 0.95,
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 42,
+  "allocation_weights": "split-specific fixed arm fractions n_arm / N",
+  "no_test_outcome_based_retuning": true
+}

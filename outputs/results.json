@@ -1,0 +1,150 @@
+{
+  "data_sha256": "00a6a868e05a9ffe7382da51629f6d6dce88c5acfc945e79d314ebc78fd3a2c0",
+  "rows": 64000,
+  "development_rows": 51200,
+  "split_sizes": {
+    "train": 38400,
+    "validation": 12800,
+    "test": 12800
+  },
+  "full_primary": [
+    {
+      "group": "Mens E-Mail",
+      "effect": 0.769827155894537,
+      "relative_effect_pct": 117.92887703620063,
+      "ci_low": 0.485139732568408,
+      "ci_high": 1.054514579220666,
+      "p_raw": 1.16381497e-07,
+      "p_holm": 2.32762994e-07
+    },
+    {
+      "group": "Womens E-Mail",
+      "effect": 0.424412215936597,
+      "relative_effect_pct": 65.01518638646863,
+      "ci_low": 0.168956789883779,
+      "ci_high": 0.679867641989415,
+      "p_raw": 0.001129397102363,
+      "p_holm": 0.001129397102363
+    }
+  ],
+  "full_summary": [
+    {
+      "segment": "Mens E-Mail",
+      "customers": 21307,
+      "buyers": 267,
+      "visit_rate_pct": 18.275684047496128,
+      "conversion_rate_pct": 1.253109306800582,
+      "revenue_per_customer": 1.422616511005773
+    },
+    {
+      "segment": "No E-Mail",
+      "customers": 21306,
+      "buyers": 122,
+      "visit_rate_pct": 10.616727682343003,
+      "conversion_rate_pct": 0.572608654839012,
+      "revenue_per_customer": 0.652789355111236
+    },
+    {
+      "segment": "Womens E-Mail",
+      "customers": 21387,
+      "buyers": 189,
+      "visit_rate_pct": 15.140038341048301,
+      "conversion_rate_pct": 0.883714405947538,
+      "revenue_per_customer": 1.077201571047833
+    }
+  ],
+  "validation_policies": [
+    {
+      "policy": "No email",
+      "emails": 0,
+      "value_per_customer": 0.641283736212157,
+      "increment_vs_no_email": 0.0
+    },
+    {
+      "policy": "Random Mens E-Mail",
+      "emails": 2000,
+      "value_per_customer": 0.797654746538371,
+      "increment_vs_no_email": 0.156371010326214
+    },
+    {
+      "policy": "Random Womens E-Mail",
+      "emails": 2000,
+      "value_per_customer": 0.699164469633308,
+      "increment_vs_no_email": 0.057880733421152
+    },
+    {
+      "policy": "High-history Mens",
+      "emails": 2000,
+      "value_per_customer": 0.886951419854494,
+      "increment_vs_no_email": 0.245667683642337
+    },
+    {
+      "policy": "Ridge T-learner",
+      "emails": 2000,
+      "value_per_customer": 0.709866099666249,
+      "increment_vs_no_email": 0.068582363454092
+    },
+    {
+      "policy": "HGB T-learner",
+      "emails": 2000,
+      "value_per_customer": 0.524174725175738,
+      "increment_vs_no_email": -0.117109011036419
+    }
+  ],
+  "test_policy_intervals": [
+    {
+      "comparison": "High-history vs No email",
+      "difference": 0.130600092553119,
+      "ci_low": -0.264555623327472,
+      "ci_high": 0.482249095909712
+    },
+    {
+      "comparison": "High-history vs Random Mens",
+      "difference": 0.046899940262132,
+      "ci_low": -0.299640634328557,
+      "ci_high": 0.360732801557525
+    }
+  ],
+  "test_policy_values": {
+    "No email": 0.7176859892044121,
+    "Random Mens E-Mail": 0.801386141495399,
+    "High-history Mens": 0.8482860817575313
+  },
+  "source_matching_extra_rows": 6562,
+  "srm_p": 0.9036929575604196,
+  "coherence_flags": {
+    "Purchase without visit": 0,
+    "Positive spend without purchase": 0,
+    "Purchase with zero spend": 0
+  },
+  "capped_sensitivity_threshold": 362.71500000000003,
+  "capped_sensitivity_rows": 23,
+  "protocol": {
+    "selection_stage": "validation",
+    "criterion": "maximum mean IPW policy revenue",
+    "selected_policy": "High-history Mens",
+    "feature": "pretreatment history",
+    "action": "Mens E-Mail",
+    "capacity_fraction": 0.15625,
+    "tie_break": "first occurrence in input row order",
+    "candidate_set": [
+      "No email",
+      "Random Mens E-Mail",
+      "Random Womens E-Mail",
+      "High-history Mens",
+      "Ridge T-learner",
+      "HGB T-learner"
+    ],
+    "test_comparisons": [
+      "High-history vs No email",
+      "High-history vs Random Mens"
+    ],
+    "test_interval_level_per_comparison": 0.975,
+    "approximate_joint_test_interval_level": 0.95,
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 42,
+    "allocation_weights": "split-specific fixed arm fractions n_arm / N",
+    "no_test_outcome_based_retuning": true
+  },
+  "source_notebook_sha256": "1ff458b3dcf422beb423085d8f831cba1d1747874510af849be88a88b7a47eae"
+}

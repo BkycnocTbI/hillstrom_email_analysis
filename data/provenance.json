@@ -1,0 +1,28 @@
+{
+  "retrieved_on": "2026-10-26",
+  "original_description": "https://blog.minethatdata.com/2008/03/minethatdata-e-mail-analytics-and-data.html",
+  "download_url": "https://hillstorm1.s3.us-east-2.amazonaws.com/hillstorm_no_indices.csv.gz",
+  "mirror_documentation": "https://www.uplift-modeling.com/en/latest/_modules/sklift/datasets/datasets.html",
+  "compressed_md5": "a68a81291f53a14f4e29002629803ba3",
+  "compressed_sha256": "bab6578f60db5d792f1c2372c502f029152a5249cf5ea84390f3b7f885d7234f",
+  "csv_sha256": "00a6a868e05a9ffe7382da51629f6d6dce88c5acfc945e79d314ebc78fd3a2c0",
+  "rows": 64000,
+  "columns": [
+    "recency",
+    "history_segment",
+    "history",
+    "mens",
+    "womens",
+    "zip_code",
+    "newbie",
+    "channel",
+    "segment",
+    "visit",
+    "conversion",
+    "spend"
+  ],
+  "analysis_plan_sha256_before_download": "93473f789e1047ae3fb3d724d7878b682f02109233fb2d9bcb8515cbd5cf283e",
+  "outcome_effects_calculated": false,
+  "analysis_plan_sha256_current": "315ca829431bd27c96037d3bcd1023a768ecd5e4022bb0b05b3220fa285e056f",
+  "plan_revision_note": "Split seeds 42 and 43 specified after download metadata checks, before treatment-effect calculations or model fitting."
+}

@@ -1,0 +1,186 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "source CSV checksum",
+      "passed": true
+    },
+    {
+      "name": "source schema and dimensions",
+      "passed": true
+    },
+    {
+      "name": "no missing source values",
+      "passed": true
+    },
+    {
+      "name": "matching combinations retained",
+      "passed": true
+    },
+    {
+      "name": "outcome coherence",
+      "passed": true
+    },
+    {
+      "name": "input paths excluded from Git",
+      "passed": true
+    },
+    {
+      "name": "allocation diagnostic",
+      "passed": true
+    },
+    {
+      "name": "all 36 code cells executed",
+      "passed": true
+    },
+    {
+      "name": "no notebook execution errors",
+      "passed": true
+    },
+    {
+      "name": "English explanations included",
+      "passed": true
+    },
+    {
+      "name": "portable notebook source",
+      "passed": true
+    },
+    {
+      "name": "Python helper syntax",
+      "passed": true
+    },
+    {
+      "name": "split sizes",
+      "passed": true
+    },
+    {
+      "name": "unique complete record coverage",
+      "passed": true
+    },
+    {
+      "name": "split reproducibility",
+      "passed": true
+    },
+    {
+      "name": "split disjointness",
+      "passed": true
+    },
+    {
+      "name": "full primary contrasts reproduce",
+      "passed": true
+    },
+    {
+      "name": "full primary Holm family",
+      "passed": true
+    },
+    {
+      "name": "full cohort denominator",
+      "passed": true
+    },
+    {
+      "name": "full buyer counts",
+      "passed": true
+    },
+    {
+      "name": "primary conclusions",
+      "passed": true
+    },
+    {
+      "name": "secondary seven-test BH family",
+      "passed": true
+    },
+    {
+      "name": "three exploratory interaction tests",
+      "passed": true
+    },
+    {
+      "name": "development cohort labelled separately",
+      "passed": true
+    },
+    {
+      "name": "all six candidate values reproduce displayed walkthrough",
+      "passed": true
+    },
+    {
+      "name": "validation capacity",
+      "passed": true
+    },
+    {
+      "name": "selection follows frozen criterion",
+      "passed": true
+    },
+    {
+      "name": "model allocation reproduces cell 27",
+      "passed": true
+    },
+    {
+      "name": "model allocation reproduces cell 29",
+      "passed": true
+    },
+    {
+      "name": "frozen selected rule",
+      "passed": true
+    },
+    {
+      "name": "two frozen test contrasts and interval level",
+      "passed": true
+    },
+    {
+      "name": "exported rule matches held-out recommendations",
+      "passed": true
+    },
+    {
+      "name": "held-out capacity and actions",
+      "passed": true
+    },
+    {
+      "name": "held-out estimates and intervals match displayed walkthrough",
+      "passed": true
+    },
+    {
+      "name": "test conclusion retains uncertainty",
+      "passed": true
+    },
+    {
+      "name": "cost scenarios explicitly assumed",
+      "passed": true
+    },
+    {
+      "name": "scenario population and capacity",
+      "passed": true
+    },
+    {
+      "name": "scenario arithmetic and interval transformation",
+      "passed": true
+    },
+    {
+      "name": "profitability uncertainty preserved",
+      "passed": true
+    },
+    {
+      "name": "valid PNG development_revenue_effects.png",
+      "passed": true
+    },
+    {
+      "name": "valid PNG full_campaign_effects.png",
+      "passed": true
+    },
+    {
+      "name": "valid PNG test_policy_comparison.png",
+      "passed": true
+    },
+    {
+      "name": "valid PNG validation_policy_comparison.png",
+      "passed": true
+    },
+    {
+      "name": "local documentation links resolve",
+      "passed": true
+    }
+  ],
+  "passed": 44,
+  "total": 44,
+  "broken_links": [],
+  "raw_data_in_distribution": false,
+  "notes": "Fresh-kernel execution is performed separately by scripts/run_notebook.py. Intervals are approximate; numerical checks do not verify the original randomization or customer identity."
+}
